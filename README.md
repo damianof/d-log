@@ -1,4 +1,7 @@
 # node-log
+
+[![npm version](https://badge.fury.io/js/d-log.svg)](http://badge.fury.io/js/d-log)
+
 Ultra light-weight logging module for NodeJS (and might even use on client side)
 
 
