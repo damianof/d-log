@@ -1,4 +1,4 @@
-# node-log
+#d-log
 
 [![npm version](https://badge.fury.io/js/d-log.svg)](http://badge.fury.io/js/d-log)
 

@@ -1,6 +1,6 @@
 {
   "name": "d-log",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Ultra light-weight logging module for NodeJS and the browser",
   "main": "./lib/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/damianof/node-log.git"
+    "url": "https://github.com/damianof/d-log.git"
   },
   "keywords": [
     "log",
@@ -18,7 +18,7 @@
   "author": "Damiano Fusco",
   "license": "GPL",
   "bugs": {
-    "url": "https://github.com/damianof/node-log/issues"
+    "url": "https://github.com/damianof/d-log/issues"
   },
-  "homepage": "https://github.com/damianof/node-log"
+  "homepage": "https://github.com/damianof/d-log"
 }
