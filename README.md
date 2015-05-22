@@ -16,3 +16,7 @@ TODO: Update readme file and add examples
 
 ##Client side tests (screenshot)
 ![ClientSideTest-Screenshot](images/ClientSideTest-Screenshot.png) 
+
+
+NPM page:
+[NPM d-log page](https://www.npmjs.com/package/d-log)
