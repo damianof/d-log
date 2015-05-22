@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Client Side Tests</title>
+		<link rel="stylesheet" media="all" href="vendor/mocha.css">
+	</head>
+	<body>
+		<div id="mocha"><p><a href=".">node-log: Client Side Tests</a></p></div>
+		<div id="messages"></div>
+		<div id="fixtures"></div>
+
+		<div style="padding:20px">
+		<h5>Html Transport will output here</h5>
+		<div id="divLog" style="margin:10px; pagging:10px; outline: solid 2px black"></div>
+
+		<h5>Chrome Transport will output in the console</h5>
+		</div>
+
+		<script src="vendor/mocha.js"></script>
+		<script src="vendor/chai.js"></script>
+		<script src="vendor/require.js"></script>
+
+		<!-- test Client Side logging -->
+		<script src="logging-tests.js"></script>
+	</body>
+</html>

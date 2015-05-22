@@ -1,0 +1,24 @@
+{
+  "name": "d-log",
+  "version": "0.0.1",
+  "description": "Ultra light-weight logging module for NodeJS and the browser",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/damianof/node-log.git"
+  },
+  "keywords": [
+    "log",
+    "logging",
+    "nodejs"
+  ],
+  "author": "Damiano Fusco",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/damianof/node-log/issues"
+  },
+  "homepage": "https://github.com/damianof/node-log"
+}
