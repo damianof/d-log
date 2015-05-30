@@ -12,9 +12,21 @@ var prefix = ' \033[',
 		white: '37m' // white
 	};
 
-
-var write = function(timestamp, level, message){
-	process.stderr.write(timestamp + prefix + stderrColors[level] + level + suffix + message + '\n');
+var write = function(timestamp, level, msg, data){
+	var message;
+	if (data){
+		// you can stringify data if is JSON, or remove this if block
+		// and just pass data to console. i.e. console.log(msg, data)
+		message = msg + ' ' + JSON.stringify(data);
+	} else {
+		message = msg;
+	}
+	
+	var messagePrefix = timestamp + prefix + stderrColors[level] + level + suffix;
+	
+	// console.log, or process.stderr.write or process.stdout.write etc
+	//process.stderr.write(messagePrefix + message + '\n');
+	console.log(messagePrefix + message);
 };
 
 module.exports = {

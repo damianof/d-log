@@ -17,7 +17,16 @@
 
 	var isChrome = /chrome/gi.test(navigator.userAgent);
 
-	var write = function(timestamp, level, message){
+	var write = function(timestamp, level, msg, data){
+		var message;
+		if (data){
+			// you can stringify data if is JSON, or remove this if block
+			// and just pass data to console. i.e. console.log(msg, data)
+			message = msg + ' ' + JSON.stringify(data);
+		} else {
+			message = msg;
+		}
+
 		if (isChrome){
 			console.log(timestamp + ' ' + prefix + level + ': ' + message, colors[level]);
 		} else {

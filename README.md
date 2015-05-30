@@ -4,6 +4,8 @@
 
 Ultra light-weight logging module for NodeJS (and might even use on client side)
 
+#@Release Notes
+- 0.0.4 Fixed a few bugs
 
 ##Server side
 TODO: Update readme file and add examples and screenshots (screenshot)
@@ -17,6 +19,7 @@ TODO: Update readme file and add examples
 ##Client side tests (screenshot)
 ![ClientSideTest-Screenshot](images/ClientSideTest-Screenshot.png) 
 
-
-NPM page:
+##NPM page:
 [NPM d-log page](https://www.npmjs.com/package/d-log)
+
+

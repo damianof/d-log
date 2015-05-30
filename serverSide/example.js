@@ -1,6 +1,6 @@
 'use strict'
 
-var stderrTransport = require('../lib/serverSideTransports/stderrTransport')
+var stderrTransport = require('../serverSideTransports/stderrTransport')
 	, logger = require('../lib/index');
 
 stderrTransport.level = 'silly';

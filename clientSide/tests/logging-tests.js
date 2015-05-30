@@ -1,12 +1,12 @@
 (function(){
 
-	requirejs(['../../../lib/index.js',
-				'../../../lib/clientSideTransports/chromeTransport',
-				'../../../lib/clientSideTransports/htmlTransport'], function(util) {
+	requirejs(['../../lib/index.js',
+				'../../clientSideTransports/chromeTransport',
+				'../../clientSideTransports/htmlTransport'], function(util) {
 
 		mocha.setup('bdd');
 
-		console.log('loaded', logger);
+		//console.log('loaded', logger);
 		var expect = chai.expect;
 
 		// var logger = require('../../../lib/index.js');
@@ -60,7 +60,7 @@
 
 				var divLog = document.getElementById('divLog');
 				htmlTransport.setDomElement(divLog);
-				console.log('divLog', divLog);
+				//console.log('divLog', divLog);
 
 				var transports = [
 					htmlTransport
