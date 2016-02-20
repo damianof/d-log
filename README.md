@@ -4,7 +4,7 @@
 
 Ultra light-weight logging module for NodeJS (and might even use on client side)
 
-#@Release Notes [![npm version]]
+#@Release Notes
 - 1.0.1 Fixed a few bugs, enhanced to not log 'undefined' when data is not passed as an argument
 
 ##Server side
