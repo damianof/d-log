@@ -23,7 +23,11 @@ var write = function(timestamp, level, msg, data){
 
 	// console.log, or process.stderr.write or process.stdout.write etc
 	//process.stderr.write(messagePrefix + message + '\n');
-	console.log(messagePrefix + msg, data);
+	if (arguments.length === 4){
+		console.log(messagePrefix + msg, data);
+	} else {
+		console.log(messagePrefix + msg);
+	}
 };
 
 module.exports = {

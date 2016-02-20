@@ -1,6 +1,6 @@
 {
   "name": "d-log",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ultra light-weight logging module for NodeJS and the browser",
   "main": "./lib/index.js",
   "scripts": {

@@ -18,21 +18,28 @@
 	var isChrome = /chrome/gi.test(navigator.userAgent);
 
 	var write = function(timestamp, level, message, data){
-		var outData, outMessage;
-		if (data){
+		var outData = data, outMessage, includesData = arguments.length === 4;
+		
+		if (includesData && data){
 			// you can stringify data if is JSON, or remove this if block
 			// and just pass data to console. i.e. console.log(msg, data)
 			outData = JSON.stringify(data);
-		} else {
-			outData = data;
 		}
 		
 		if (level != 'log' && isChrome){
 			outMessage = timestamp + ' ' + prefix + level + ': ' + message, colors[level];
-			console.log(outMessage, colors[level], outData);
+			if (includesData){
+				console.log(outMessage, colors[level], outData);
+			} else {
+				console.log(outMessage, colors[level]);
+			}
 		} else {
 			outMessage = timestamp + ' ' + level + ': ' + message;
-			console.log(outMessage, outData);
+			if (includesData){
+				console.log(outMessage, outData);
+			} else {
+				console.log(outMessage);
+			}
 		}
 	};
 

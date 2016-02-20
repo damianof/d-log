@@ -18,20 +18,25 @@
 	var write = function(timestamp, level, message, data){
 		//console.log('htmlTransport', colors[level]);
 		
-		var outData, outHtml;
-		if (data){
+		var outData = data, outHtml, includesData = arguments.length === 4;
+		
+		if (includesData && data){
 			// you can stringify data if is JSON, or remove this if block
 			// and just pass data to console. i.e. console.log(msg, data)
 			outData = JSON.stringify(data);
-		} else {
-			outData = data;
 		}
 		
 		if (level != 'log'){
 			var formatLevel = '<span style="' + colors[level] + '">' + level.toUpperCase() + '</span>';
-			outHtml = timestamp + ' ' + formatLevel + ': ' + message + ': ' + outData + '<br/>';
+			outHtml = timestamp + ' ' + formatLevel + ': ' + message;
 		} else {
-			outHtml = timestamp + ' ' + level + ': ' + message + ': ' + outData + '<br/>';
+			outHtml = timestamp + ' ' + level + ': ' + message;
+		}
+		
+		if (includesData){
+			outHtml += ': ' + outData + '<br/>';
+		} else {
+			outHtml += '<br/>';
 		}
 		
 		domElement.innerHTML += outHtml;
