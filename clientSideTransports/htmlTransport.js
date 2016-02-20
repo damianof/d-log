@@ -15,20 +15,26 @@
 			, cyan: 'background-color:cyan;color:black'
 		};
 
-	var write = function(timestamp, level, msg, data){
+	var write = function(timestamp, level, message, data){
 		//console.log('htmlTransport', colors[level]);
 		
-		var message;
+		var outData, outHtml;
 		if (data){
 			// you can stringify data if is JSON, or remove this if block
 			// and just pass data to console. i.e. console.log(msg, data)
-			message = msg + ' ' + JSON.stringify(data);
+			outData = JSON.stringify(data);
 		} else {
-			message = msg;
+			outData = data;
 		}
 		
-		var formatLevel = '<span style="' + colors[level] + '">' + level.toUpperCase() + '</span>';
-		domElement.innerHTML += timestamp + ' ' + formatLevel + ': ' + message + '<br/>';
+		if (level != 'log'){
+			var formatLevel = '<span style="' + colors[level] + '">' + level.toUpperCase() + '</span>';
+			outHtml = timestamp + ' ' + formatLevel + ': ' + message + ': ' + outData + '<br/>';
+		} else {
+			outHtml = timestamp + ' ' + level + ': ' + message + ': ' + outData + '<br/>';
+		}
+		
+		domElement.innerHTML += outHtml;
 	};
 
 	var htmlTransport = {

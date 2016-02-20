@@ -12,7 +12,7 @@ var transports = [
 
 logger.init(transports);
 
-logger.silly('test silly');
+logger.silly('test silly', {});
 logger.debug('test debug');
 logger.info('test info');
 logger.warn('test warn');
