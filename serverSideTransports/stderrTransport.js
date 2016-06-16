@@ -8,8 +8,10 @@ var prefix = ' \033[',
 		warn: '33m', // yellow
 		debug: '34m', // blue
 		silly: '35m', // magenta
+		white: '37m', // white
 		cyan: '36m', // cyan
-		white: '37m' // white
+		yellow: '7;32m', // green background
+		orange: '7;33m' // yellow background
 	};
 
 var write = function(timestamp, level, msg, data){

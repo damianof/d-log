@@ -21,6 +21,8 @@ logger.info('test info');
 logger.warn('test warn');
 logger.error('test error');
 logger.cyan('test cyan');
+logger.yellow('test yellow - should be green background');
+logger.orange('test orange - should be yellow background');
 
 // should log data as 'udnefined' because we are passing it but is not defined
 console.log('following should print "undefined" for data because we are passing it and it\'s not defined');
@@ -32,6 +34,8 @@ logger.info('test info', data);
 logger.warn('test warn', data);
 logger.error('test error', data);
 logger.cyan('test cyan', data);
+logger.yellow('test yellow - should be green background', data);
+logger.orange('test orange - should be yellow background', data);
 
 // should log data because we are passing it and it is defined
 console.log('following should print our data object as serialized JSON');
@@ -43,4 +47,6 @@ logger.info('test info', data);
 logger.warn('test warn', data);
 logger.error('test error', data);
 logger.cyan('test cyan', data);
+logger.yellow('test yellow - should be green background', data);
+logger.orange('test orange - should be yellow background', data);
 
