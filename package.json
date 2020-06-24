@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/damianof/d-log/issues"
   },
-  "homepage": "https://github.com/damianof/d-log"
+  "homepage": "https://github.com/damianof/d-log",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
