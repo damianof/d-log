@@ -1,5 +1,5 @@
 {
-  "name": "d-log",
+  "name": "@damianof/d-log",
   "version": "1.0.2",
   "description": "Ultra light-weight logging module for NodeJS and the browser",
   "main": "./lib/index.js",
@@ -16,7 +16,7 @@
     "nodejs"
   ],
   "author": "Damiano Fusco",
-  "license": "GPL",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/damianof/d-log/issues"
   },
