@@ -1,7 +1,7 @@
 {
   "name": "@damianof/d-log",
-  "version": "1.0.3",
-  "description": "Ultra light-weight logging module for NodeJS and the browser",
+  "version": "1.0.4",
+  "description": "Ultra light-weight logging module for NodeJS and the browser (OBSOLETE: use https://www.npmjs.com/package/underlog)",
   "main": "./lib/index.js",
   "scripts": {
     "test": "mocha test"
