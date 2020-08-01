@@ -1,5 +1,5 @@
 {
-  "name": "@damianof/d-log",
+  "name": "d-log",
   "version": "1.0.4",
   "description": "Ultra light-weight logging module for NodeJS and the browser (OBSOLETE: use https://www.npmjs.com/package/underlog)",
   "main": "./lib/index.js",
@@ -20,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/damianof/d-log/issues"
   },
-  "homepage": "https://github.com/damianof/d-log",
-  "publishConfig": {
-	"registry": "https://registry.npmjs.org/"
-  }
+  "homepage": "https://github.com/damianof/d-log"
 }
