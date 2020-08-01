@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/damianof/d-log",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+	"registry": "https://registry.npmjs.org/"
   }
 }
